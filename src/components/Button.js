@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 
 
-function Button({color, text}) {
+function Button({color, text, onClick}) {
     return (
-        <button style={{backgroundColor: color}} className='btn'>{text}</button>
+        <button style={{backgroundColor: color}} onClick={onClick} className='btn'>{text}</button>
     )
 }
 
